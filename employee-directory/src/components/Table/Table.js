@@ -2,7 +2,7 @@ import React from "react";
 import "./Table.css";
 
 
-function TableHeader(props) {
+function Table(props) {
     return (
         <>
           <thead className="tableHead">
@@ -19,4 +19,4 @@ function TableHeader(props) {
     )
 }
 
-export default TableHeader;
+export default Table;

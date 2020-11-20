@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "Jake Peralta",
+        "image": "",
+        "phone": "(832) 432-0972",
+        "email": "JPeralta@NYPD99.com",
+        "birthday": "June 1, 1981"
+    },
+    {
+        "id": 2,
+        "name": "Rosa Diaz",
+        "image": "",
+        "phone": "(654) 984-6463",
+        "email": "RDiaz@NYPD99.com",
+        "birthday": "May 18, 1985"
+    },
+    {
+        "id": 3,
+        "name": "Terry Jeffords",
+        "image": "",
+        "phone": "(325) 277-9970",
+        "email": "TJeffords@NYPD99.com",
+        "birthday": "October 26, 1979"
+    },
+    {
+        "id": 4,
+        "name": "Amy Santiago",
+        "image": "",
+        "phone": "(832) 702-0993",
+        "email": "ASantiago@NYPD99.com",
+        "birthday": "February 9, 1983"
+    },
+    {
+        "id": 5,
+        "name": "Charles Boyle",
+        "image": "",
+        "phone": "(426) 761-9544",
+        "email": "CBoyle@NYPD99.com",
+        "birthday": "May 19, 1974 "
+    },
+    {
+        "id": 6,
+        "name": "Raymond Holt",
+        "image": "",
+        "phone": "(462) 798-6382",
+        "email": "RHolt@NYPD99.com",
+        "birthday": "March 4, 1958"
+    },
+    {
+        "id": 7,
+        "name": "Michael Hitchcock",
+        "image": "",
+        "phone": "(832) 432-0972",
+        "email": "MHitchcock@NYPD99.com",
+        "birthday": "April 29, 1957"
+    },
+    {
+        "id": 8,
+        "name": "Norm Skully",
+        "image": "",
+        "phone": "(412) 096-0220",
+        "email": "NSkully@NYPD99.com",
+        "birthday": "September 11, 1957"
+    },
+    {
+        "id": 9,
+        "name": "Gina Linetti",
+        "image": "",
+        "phone": "(832) 432-0972",
+        "email": "GLinetti@NYPD99.com",
+        "birthday": "December 7, 1981"
+    },
+    {
+        "id": 10,
+        "name": "Kevin Cozner",
+        "image": "",
+        "phone": "(226) 048-8794",
+        "email": "KCozner@NYU.com",
+        "birthday": "June 1, 1980"
+    },
+    {
+        "id": 11,
+        "name": "Adrian Pimento",
+        "image": "",
+        "phone": "(992) 432-0992",
+        "email": "A-Man@test.com",
+        "birthday": "June 1, 1980"
+    },
+    {
+        "id": 12,
+        "name": "Madeline Wuntch",
+        "image": "",
+        "phone": "(666) 856-0763",
+        "email": "DCWunch@NYPD.com",
+        "birthday": "June 6, 1956"
+    }
+]

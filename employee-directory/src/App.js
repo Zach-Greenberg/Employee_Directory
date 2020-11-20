@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/Header/Header";
 import SearchInput from "./components/SearchInput/SearchInput";
-import TableHeader from "./components/Table/Table";
+import Table from "./components/Table/Table";
 import SearchResults from "./components/SearchResults/SearchResults";
 import employees from './employee.json';
 
@@ -123,7 +123,7 @@ class App extends React.Component {
           handleInputChange={this.handleInputChange}
         />
         <table className="table table-striped">
-          <TableHeader 
+          <Table 
           handleSortClick={this.handleSortClick}
           handleSortClickBday={this.handleSortClickBday}
           handleSortClickPhone={this.handleSortClickPhone}
