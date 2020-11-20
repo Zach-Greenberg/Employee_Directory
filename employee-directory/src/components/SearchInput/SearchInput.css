@@ -1,0 +1,36 @@
+.form {
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 50px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    /* background-color: #57aada; */
+}
+
+.searchInputBox {
+    width: 400px;
+    height: 60px;
+    color: white;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color:#182f94; 
+    padding: 10px 20px 10px 10px;
+  }
+
+::placeholder { 
+    color: white;
+    opacity: 1;
+    font-size: 18px;
+    padding-left: 5px
+  }
+
+/* .searchInputBtn {
+    background-color: #359211;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 8px;
+    margin: 4px 2px;
+} */
