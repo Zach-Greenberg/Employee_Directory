@@ -1,0 +1,14 @@
+div.container {
+    text-align: center;
+    color: white;
+}
+
+.jumotron {
+    background-color: teal;
+    margin-bottom: 10px;
+}
+
+.display-4 {
+    color: thistle;
+    font-family: 'Courier New', Courier, monospace;
+}
