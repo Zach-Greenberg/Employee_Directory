@@ -1,0 +1,12 @@
+.tableHead {
+    background-color: #7953B3;
+    color: white;
+}
+
+i.fas {
+    display: none;
+}
+
+.hover:hover > i.fas {
+    display: inline-block;
+}
