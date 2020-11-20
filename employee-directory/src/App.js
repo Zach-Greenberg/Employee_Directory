@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "./components/Header";
-import SearchInput from "./components/SearchInput";
-import TableHeader from "./components/TableHeader";
-import SearchResults from "./components/SearchResults";
+import Header from "./components/Header/Header";
+import SearchInput from "./components/SearchInput/SearchInput";
+import TableHeader from "./components/Table/Table";
+import SearchResults from "./components/SearchResults/SearchResults";
 import employees from './employee.json';
 
 class App extends React.Component {
@@ -13,6 +13,7 @@ class App extends React.Component {
   }
 
   handleInputChange = event => {
+    event.preventDefault();
     let query = event.target.value.toLowerCase();
     const filteredEmployees = employees.filter(result =>
       result.name.toLowerCase().toString().includes(query) ||
@@ -22,10 +23,6 @@ class App extends React.Component {
     );
 
     this.setState({ employees: filteredEmployees })
-  }
-
-  handleFormSubmit = () => {
-    event.preventDefault();
   }
 
   // get sort order here
@@ -39,9 +36,8 @@ class App extends React.Component {
     if (b.name > a.name) return 1;
     return 0;
   };
-  handleSortClick = () => {
-    event.preventDefault();
-    const sortOrderNow = this.state.sortOrder == "descending" ? "ascending" : "descending";
+  handleSortClick = (event) => {
+    const sortOrderNow = this.state.sortOrder === "descending" ? "ascending" : "descending";
     this.setState({ sortOrder: sortOrderNow })
     let sortedEmployees = "";
     if (this.state.sortOrder === "ascending") {
@@ -62,9 +58,8 @@ class App extends React.Component {
     if (Date.parse(b.birthday) > Date.parse(a.birthday)) return 1;
     return 0;
   };
-  handleSortClickBday = () => {
-    event.preventDefault();
-    const sortOrderNow = this.state.sortOrder == "descending" ? "ascending" : "descending";
+  handleSortClickBday = (event) => {
+    const sortOrderNow = this.state.sortOrder === "descending" ? "ascending" : "descending";
     this.setState({ sortOrder: sortOrderNow })
     let sortedEmployees = "";
     if (this.state.sortOrder === "ascending") {
@@ -85,9 +80,8 @@ class App extends React.Component {
     if (b.phone > a.phone) return 1;
     return 0;
   };
-  handleSortClickPhone = () => {
-    event.preventDefault();
-    const sortOrderNow = this.state.sortOrder == "descending" ? "ascending" : "descending";
+  handleSortClickPhone = (event) => {
+    const sortOrderNow = this.state.sortOrder === "descending" ? "ascending" : "descending";
     this.setState({ sortOrder: sortOrderNow })
     let sortedEmployees = "";
     if (this.state.sortOrder === "ascending") {
@@ -108,9 +102,8 @@ class App extends React.Component {
     if (b.email > a.email) return 1;
     return 0;
   };
-  handleSortClickEmail = () => {
-    event.preventDefault();
-    const sortOrderNow = this.state.sortOrder == "descending" ? "ascending" : "descending";
+  handleSortClickEmail = (event) => {
+    const sortOrderNow = this.state.sortOrder === "descending" ? "ascending" : "descending";
     this.setState({ sortOrder: sortOrderNow })
     let sortedEmployees = "";
     if (this.state.sortOrder === "ascending") {
@@ -127,7 +120,6 @@ class App extends React.Component {
         <Header />
         <SearchInput
           name="search" value={this.state.search}
-          handleFormSubmit={this.handleFormSubmit}
           handleInputChange={this.handleInputChange}
         />
         <table className="table table-striped">
